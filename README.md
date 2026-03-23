@@ -38,11 +38,11 @@ source ~/ros2_ws/.venv/bin/activate
 
 # 3. bme_common_msgs を先にビルド (他パッケージが依存)
 cd ~/ros2_ws
-colcon build --packages-select bme_common_msgs
+colcon build --symlink-install --packages-select bme_common_msgs
 source install/setup.bash
 
 # 4. 残りのパッケージをビルド
-colcon build
+colcon build --symlink-install
 source install/setup.bash
 ```
 
