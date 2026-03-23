@@ -1,0 +1,17 @@
+[Unit]
+Description=ROS2 Maestro Servo Driver
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=kikai
+ExecStart=/home/kikai/ros2_ws/deploy/scripts/launch_maestro.sh
+Restart=always
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+TimeoutStopSec=10
+
+[Install]
+WantedBy=multi-user.target
