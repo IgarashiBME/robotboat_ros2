@@ -21,9 +21,8 @@ RTK-GNSSによる高精度測位を用いた自律走行地上ローバーシス
 
 ## ソースコードの取得
 
-vcstool を使用して各パッケージを `src/` にクローンする。
-
 ```bash
+git clone https://github.com/IgarashiBME/robotboat_ros2.git ~/ros2_ws
 cd ~/ros2_ws
 vcs import src < robotboat.repos
 ```
