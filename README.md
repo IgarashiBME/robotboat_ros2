@@ -81,3 +81,7 @@ ros2 launch look_ahead_control look_ahead_following.launch.py
 
 実機での運用では systemd を利用して全ノードをOS起動時に自動実行できる。
 詳細は [doc/deployment.md](doc/deployment.md) を参照。
+
+## 運用
+
+QGroundControl を使用したミッション作成・自律航行の操作手順については [doc/operation.md](doc/operation.md) を参照。
