@@ -19,6 +19,15 @@ RTK-GNSSによる高精度測位を用いた自律走行地上ローバーシス
   - 使用パッケージ: `ublox_gnss_driver`, `look_ahead_control`
 - **pyserial**: `ublox_gnss_driver`, `maestro_driver` で使用
 
+## ソースコードの取得
+
+vcstool を使用して各パッケージを `src/` にクローンする。
+
+```bash
+cd ~/ros2_ws
+vcs import src < robotboat.repos
+```
+
 ## ビルド
 
 ```bash
@@ -42,13 +51,6 @@ source install/setup.bash
 
 ```bash
 colcon build --packages-select <package_name>
-```
-
-### テスト
-
-```bash
-colcon test --packages-select <package_name>
-colcon test-result --verbose
 ```
 
 ## 起動
